@@ -1,22 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+
+import { Component } from "react";
+
+class Subject extends Component{
+  render(){
+    return (
+      <header>
+        <h1>
+          TEST
+        </h1>
+        테스트중입니다.
+      </header>
+    );
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="home">
+      <Subject></Subject>
+      <user_page>
+        <h2>닉네임, 마이페이지</h2>
+      </user_page>
+
+      <header>
+        <h1>게임 파티 모집</h1>
       </header>
     </div>
   );
