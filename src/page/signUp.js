@@ -29,7 +29,7 @@ function signUpPage () {
           <h4>ID</h4>
           <input id="userIdInput" type="text"></input>
           <h4>PW</h4>
-          <input id="userPwInput" type="text"></input>
+          <input id="userPwInput" type="password"></input>
           <h4>닉네임</h4>
           <input id="userNickNameInput" type="text"></input>
         </div>
