@@ -3,21 +3,6 @@ import { Component } from "react";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
-class Subject extends Component {
-  render() {
-    return (
-      <header>
-        {/* /*id="project_title"* */}
-        <h1> 
-          
-        </h1>
-        테스트중입니다.
-      </header>
-    );
-  }
-}
-
 class Login_List extends Component{
   render() {
     return(

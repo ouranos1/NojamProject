@@ -14,17 +14,13 @@ function signUpCheckEvent(){
       "password" : pW
     });
     console.log(signTest);
-    console.log(signTest.status);
-    if(signTest == 201 || signTest == 200){
-      console.log("로그인 성공");
-    }
   }
   catch(error){
     console.log(error);
   }
 }
 
-function signUpPage () { 
+function logInSuccess () { 
 
   return (
       <div className="Login_Layer">
@@ -43,4 +39,4 @@ function signUpPage () {
   );
 }
 
-export default signUpPage;
+export default logInSuccess;
