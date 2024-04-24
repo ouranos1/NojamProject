@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Component } from "react";
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { json, useNavigate } from "react-router-dom";
 
 class Login_List extends Component{
   render() {
@@ -26,20 +26,26 @@ function MainPage () {
   function login_Event(){
     console.log("로그인 테스트");
   
+    let test = null;
+    
     let userId = document.getElementById("id_Input").value;
     let userPw = document.getElementById("passWord_Input").value;
   
-    try{
-      const response = axios.post("/user/login", {
-        "email" : userId,
-        "password" : userPw
-      });
-      console.log(response.data);
+  
+    const jsondata = async () => {
+      try{
+        await axios.post("/user/login", {
+          "email" : userId,
+          "password" : userPw
+        })
+      }
+      catch(error){
+        console.log("오류", error)
+      }
     }
-    catch(error){
-      console.log("오류", error);
-    }
-  }
+
+    console.log(jsondata);
+}
 
   const navigatesignUp = () => {
     navigate("/signUp");

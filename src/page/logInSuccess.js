@@ -14,6 +14,7 @@ function signUpCheckEvent(){
       "password" : pW
     });
     console.log(signTest);
+    // console.log(signTest)
   }
   catch(error){
     console.log(error);

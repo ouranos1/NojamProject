@@ -24,6 +24,10 @@
   color: white;
 }
 
+.testcode .test .App-header{
+  display: none;
+}
+
 .App-link {
   color: #61dafb;
 }
